@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Popular Movies 2</string>
+    <string name="movie_poster">movie poster</string>
+    <string name="overview">Overview</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="failed_to_get_movies">Failed to get movies. Please, try again.</string>
+    <string name="trailerLabel">Trailers</string>
+    <string name="trailers">Trailers</string>
+    <string name="failed_to_get_trailers">Failed to get trailers. Please, try again. </string>
+    <string name="reviews">Reviews</string>
+    <string name="loading_movies">Loading Movies</string>
+    <string name="favorites">Favorites</string>
+</resources>
