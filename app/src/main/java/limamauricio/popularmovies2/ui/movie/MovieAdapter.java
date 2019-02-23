@@ -53,7 +53,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         return movieList == null ? 0 : movieList.size();
     }
 
-    public void setTasks(List<Movie> movies) {
+    public void setMovies(List<Movie> movies) {
         movieList = movies;
         notifyDataSetChanged();
     }

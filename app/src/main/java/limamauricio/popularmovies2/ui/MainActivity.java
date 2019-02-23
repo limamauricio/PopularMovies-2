@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Item
                 if(page == 1) {
                     movieList = response.body().getMovieList();
                     totalPages = response.body().getTotalPages();
-                    movieAdapter.setTasks(movieList);
+                    movieAdapter.setMovies(movieList);
                 } else {
                     List<Movie> movies = response.body().getMovieList();
                     for(Movie movie : movies){
@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Item
                     movieList = new LinkedList<>();
                 movieList.clear();
                 movieList.addAll(movies);
-                movieAdapter.setTasks(movieList);
+                movieAdapter.setMovies(movieList);
             }
         });
 
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Item
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         movieList = (List<Movie>) savedInstanceState.getSerializable(MOVIE_TAG);
-        movieAdapter.setTasks(movieList);
+        movieAdapter.setMovies(movieList);
 
 
     }
